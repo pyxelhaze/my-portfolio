@@ -1,0 +1,75 @@
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2% 0 2%;
+}
+h2 {
+  color: darkslategray;
+  margin: 4%;
+}
+h3 {
+  margin: 1% 4% 15% 4%;
+}
+h3,
+h2 {
+  font-weight: 450;
+  display: flex;
+  justify-content: end;
+}
+.hello {
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.modalbutton {
+  font-family: 'Poppins';
+  color: aliceblue;
+  font-size: 3.5vw;
+  text-decoration: none;
+  background-color: rgba(47, 79, 79, 0.76);
+  padding: 3%;
+  margin-right: 4%;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.gitbutton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 11%;
+}
+.gitbutton .logo {
+  height: 100%;
+  width: 100%;
+}
+.smoke {
+  background: linear-gradient(
+    to left,
+    rgba(47, 79, 79, 0.082) 20%,
+    darkslategrey 40%,
+    darkslategrey 60%,
+    rgba(47, 79, 79, 0.082) 80%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: smoke 12s linear infinite;
+}
+@keyframes smoke {
+  to {
+    background-position: 200% center;
+  }
+}
