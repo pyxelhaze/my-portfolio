@@ -2,15 +2,13 @@
   font-family: 'Poppins';
 }
 body {
-  background-image: url('/public/background1.jpg');
-  background-size: auto;
+  background-image: url('/public/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  margin: 0;
+  height: 100vh;
 }
-/* header,
-footer {
-  background-color: #282c34;
-  color: white;
-  padding: 20px;
-} */
 
 section {
   margin: 20px;
@@ -67,7 +65,28 @@ section {
   padding: 5%;
   font-size: 0.8em;
 }
+/* scrollbar */
+.modal::-webkit-scrollbar {
+  width: 5px;
+}
 
+.modal::-webkit-scrollbar-thumb {
+  background-color: #ffffff48;
+  border-radius: 6px;
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
+
+/* Anpassen des horizontalen Scrollbalkens  */
+.modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
 #overlay {
   position: fixed;
   opacity: 0;
@@ -83,4 +102,179 @@ section {
 #overlay.active {
   opacity: 1;
   pointer-events: auto;
+}
+
+/* projects */
+
+#modal-work {
+  display: flex;
+  justify-content: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.project1,
+.project2,
+.project3,
+.project4 {
+  border: 2px solid darkslategray;
+  width: 90%;
+  height: 35vw;
+  margin-top: 15px;
+  border-radius: 5px;
+  position: relative;
+}
+.project1 {
+  /* font-family: 'Dancing Script', cursive; */
+  background-image: url('../public/aquavista.jpg');
+  font-size: 1.5em;
+  text-align: center;
+  background-size: cover;
+}
+.project2 {
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+  background-image: url('../public/Becken_total/07-19.jpg');
+  background-size: cover;
+}
+.project3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  background-image: url('../public/thumbnails/sunsystem.jpg');
+  background-size: cover;
+}
+.project4 {
+  font-size: 2em;
+  font-family: 'Handlee', cursive;
+  background-image: url('../public/thumbnails/colors.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.c {
+  color: green;
+}
+.o {
+  color: red;
+}
+.l {
+  color: yellow;
+}
+.r {
+  color: blue;
+}
+.s {
+  color: orange;
+}
+
+.project2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  max-width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000;
+}
+.project-overlay a {
+  text-decoration: none;
+}
+.project-overlay-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 40px;
+}
+.project1:hover .project-overlay,
+.project2:hover .project-overlay,
+.project3:hover .project-overlay {
+  height: 100%;
+  opacity: 0.75;
+}
+.project4:hover .project-overlay {
+  height: 100%;
+  opacity: 1;
+}
+
+/* messagebox */
+
+.messagebox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.two {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .modal-header .title {
+    font-size: 1.1em;
+  }
+  .modal-body {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('/public/background.jpg');
+    background-size: auto 100%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-image: url('/public/background.jpg');
+    background-size: cover;
+  }
+  #modal-projects {
+    width: 60%;
+  }
+  #modal-about {
+    width: 60%;
+  }
+  #modal-contact {
+    width: 25%;
+  }
+  .modal-header .title {
+    font-size: 1.3em;
+  }
+  .modal-body {
+    font-size: 1em;
+  }
+  .project-overlay {
+    font-size: 1.6em;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    width: 90%;
+    height: 25vw;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    background-image: url('/public/background.jpg');
+    background-size: cover;
+  }
 }

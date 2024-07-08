@@ -31,9 +31,10 @@ nav {
 .modalbutton {
   font-family: 'Poppins';
   color: aliceblue;
-  font-size: 3.5vw;
+  cursor: pointer;
+  font-size: 0.8em;
   text-decoration: none;
-  background-color: rgba(47, 79, 79, 0.76);
+  background-color: rgba(47, 79, 79, 0.623);
   padding: 3%;
   margin-right: 4%;
   border-radius: 50px;
@@ -71,5 +72,59 @@ nav {
 @keyframes smoke {
   to {
     background-position: 200% center;
+  }
+}
+/* Styles for medium devices (tablets) */
+@media (min-width: 600px) {
+  h3 {
+    margin: 1% 4% 7% 4%;
+  }
+  .modalbutton {
+    padding: 2%;
+  }
+  .gitbutton {
+    width: 6%;
+  }
+}
+
+/* Styles for large devices (desktops) */
+@media (min-width: 768px) {
+  .head {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 2% 0 2%;
+  }
+  .header {
+    width: 50%;
+  }
+  nav {
+    margin-top: 5%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  h3 {
+    margin: 1% 4% 7% 4%;
+  }
+  .modalbutton {
+    padding: 2%;
+  }
+  .gitbutton {
+    width: 10%;
+  }
+}
+
+/* Styles for extra large devices (large desktops) */
+@media (min-width: 1024px) {
+  h2 {
+    margin: 4% 4% 2% 4%;
+  }
+  h3 {
+    margin: 0% 4% 7% 4%;
+  }
+  .modalbutton:hover {
+    border: 2px solid darkslategrey;
   }
 }

@@ -8,7 +8,7 @@ const NavBar = ({ openModal }) => {
             <button className="modalbutton" onClick={() => openModal('projects')}>Projects</button>
             <button className="modalbutton" onClick={() => openModal('contact')}>Contact</button>
             <button className="gitbutton">
-                <a href="https://github.com/pyxelhaze" target="_blank" rel="noreferrer">
+                <a href="https://github.com/pyxelhaze?tab=repositories" target="_blank" rel="noreferrer">
                     <img className="logo" src="./github-mark.png" alt="GitHub Logo" />
                 </a>
             </button>

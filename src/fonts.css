@@ -159,3 +159,38 @@
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Handlee';
+  src: url('./assets/fonts/Handlee-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Handlee-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parisienne';
+  src: url('./assets/fonts/Parisienne-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Parisienne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-Thin.woff2') format('woff2'),
+    url('./assets/fonts/Raleway-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-ThinItalic.woff2') format('woff2'),
+    url('./assets/fonts/Raleway-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
