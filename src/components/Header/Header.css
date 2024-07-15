@@ -118,13 +118,26 @@ nav {
 
 /* Styles for extra large devices (large desktops) */
 @media (min-width: 1024px) {
+  nav {
+    width: 100%;
+  }
   h2 {
-    margin: 4% 4% 2% 4%;
+    font-size: 1.9em;
+    margin: 3% 4% 2% 4%;
   }
   h3 {
+    font-size: 1.3em;
     margin: 0% 4% 7% 4%;
+  }
+  .modalbutton {
+    font-size: 1em;
+    padding: 2%;
+    margin-right: 2%;
   }
   .modalbutton:hover {
     border: 2px solid darkslategrey;
+  }
+  .gitbutton {
+    width: 10%;
   }
 }

@@ -52,7 +52,7 @@ const App = () => {
             have taken the leap for a fresh start. Initially, I began
             self-studying, but it quickly became clear to me that I wanted to
             learn it properly. So, I decided to undergo training with GFN GmbH
-            to become a certified software developer (JavaScript). I have
+            to become a certified software developer for JavaScript and PHP&MySQL. I have
             successfully completed the course and have been able to establish a
             strong foundation for the future. <br /><br />This website serves as
             a portfolio to showcase where my skills lie, and I will continuously
@@ -72,22 +72,26 @@ const App = () => {
             </button>
           </div>
           <div className="modal-body">
-            All projects have been developed without the use of any frameworks
-            at their current state. While I do have some initial knowledge in
-            Bootstrap and React, I aim to improve my proficiency in vanilla
-            languages before incorporating frameworks. <br /><br />
-            A brief overview of the showcased projects: Watergardens is
-            somewhat of a tribute to my past aquascapes, colors is a small
-            minigame, Solarsystem accesses an external API, and the Animal
-            Shelter is just pure and simple HTML&CSS.
+            Here is a brief overview of my projects:
+            pyxelhaze and The Blogging Point are built using React.
+            Colors is a JavaScript minigame, Solarsystem accesses
+            an external api, while Aqua Vista and
+            the toDoList are developed with PHP and MySQL.
+            You can find the source code for these projects on my&nbsp;
+            <a
+              href="https://github.com/pyxelhaze?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: 'white', cursor: 'pointer', textDecoration: 'underline' }}
+            >GitHub</a> page.
             <div className="projects">
-              <div className="project1">
+              <div className="project2">
                 <div className="project-overlay">
                   <a
-                    href="https://pyxelhaze.com/holidayresort"
+                    href="https://bloggingpoint.pyxelhaze.com/"
                     className="project-overlay-text overlay-link"
                   >
-                    Aqua Vista
+                    The Blogging Point
                   </a>
                 </div>
               </div>
@@ -116,48 +120,61 @@ const App = () => {
                   </a>
                 </div>
               </div>
-              <div className="project2">
+              <div className="project1">
                 <div className="project-overlay">
                   <a
-                    href="https://pyxelhaze.com/watergardens"
+                    href="https://pyxelhaze.com/holidayresort/public"
                     className="project-overlay-text overlay-link"
                   >
-                    Watergardens
+                    Aqua Vista
+                  </a>
+                </div>
+              </div>
+              <div className="project5">
+                <div className="project-overlay">
+                  <a
+                    href="https://pyxelhaze.com/todolist"
+                    className="project-overlay-text overlay-link"
+                  >
+                    toDoList
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </Modal>
-      )}
+      )
+      }
 
-      {modals.contact && (
-        <Modal id="modal-contact" closeModal={() => closeModal('contact')} active={true}>
-          <div className="modal-header">
-            <div className="title">Contact</div>
-            <button className="close-button" onClick={() => closeModal('contact')}>
-              &times;
-            </button>
-          </div>
-          <div className="modal-body">
-            <div className="messagebox">
-              <div className="email">
-                Send me an email
-                <br /><br />
-                <a
-                  className="two"
-                  href="mailto:thomas@pyxelhaze.com?subject=Hi&amp;body=Hey Thomas,"
-                  target="_blank" rel="noreferrer"
-                >
-                  thomas@pyxelhaze.com
-                </a>
-                <br /><br />
+      {
+        modals.contact && (
+          <Modal id="modal-contact" closeModal={() => closeModal('contact')} active={true}>
+            <div className="modal-header">
+              <div className="title">Contact</div>
+              <button className="close-button" onClick={() => closeModal('contact')}>
+                &times;
+              </button>
+            </div>
+            <div className="modal-body">
+              <div className="messagebox">
+                <div className="email">
+                  Send me an email
+                  <br /><br />
+                  <a
+                    className="two"
+                    href="mailto:thomas@pyxelhaze.com?subject=Hi&amp;body=Hey Thomas,"
+                    target="_blank" rel="noreferrer"
+                  >
+                    thomas@pyxelhaze.com
+                  </a>
+                  <br /><br />
+                </div>
               </div>
             </div>
-          </div>
-        </Modal>
-      )}
-    </div>
+          </Modal>
+        )
+      }
+    </div >
   );
 };
 

@@ -121,7 +121,8 @@ section {
 .project1,
 .project2,
 .project3,
-.project4 {
+.project4,
+.project5 {
   border: 2px solid darkslategray;
   width: 90%;
   height: 35vw;
@@ -130,17 +131,18 @@ section {
   position: relative;
 }
 .project1 {
-  /* font-family: 'Dancing Script', cursive; */
   background-image: url('../public/aquavista.jpg');
   font-size: 1.5em;
   text-align: center;
   background-size: cover;
 }
 .project2 {
-  font-family: 'Parisienne', cursive;
-  font-size: 2em;
-  background-image: url('../public/Becken_total/07-19.jpg');
+  /* font-family: 'Parisienne', cursive; */
+  font-size: 1.8em;
+  background-image: url('../public/thumbnails/blogging.jpg');
   background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 .project3 {
   font-family: 'Raleway', sans-serif;
@@ -152,6 +154,14 @@ section {
   font-size: 2em;
   font-family: 'Handlee', cursive;
   background-image: url('../public/thumbnails/colors.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.project5 {
+  font-size: 1.5em;
+  /* font-family: 'Handlee', cursive; */
+  background-image: url('../public/thumbnails/todolist.jpg');
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -204,11 +214,25 @@ section {
   padding: 40px;
 }
 .project1:hover .project-overlay,
-.project2:hover .project-overlay,
-.project3:hover .project-overlay {
+.project3:hover .project-overlay,
+.project5:hover .project-overlay {
   height: 100%;
   opacity: 0.75;
 }
+.project2:hover .project-overlay {
+  height: 100%;
+  opacity: 1;
+  background-color: #ffffff;
+}
+.project2:hover .project-overlay-text {
+  color: rgb(7, 0, 65);
+}
+.project5:hover .project-overlay {
+  height: 100%;
+  opacity: 1;
+  background-color: rgb(95, 158, 160);
+}
+
 .project4:hover .project-overlay {
   height: 100%;
   opacity: 1;
@@ -255,6 +279,9 @@ section {
   #modal-contact {
     width: 25%;
   }
+  .modal-header {
+    padding: 3%;
+  }
   .modal-header .title {
     font-size: 1.3em;
   }
@@ -267,7 +294,8 @@ section {
   .project1,
   .project2,
   .project3,
-  .project4 {
+  .project4,
+  .project5 {
     width: 90%;
     height: 25vw;
   }
