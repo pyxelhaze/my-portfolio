@@ -122,7 +122,8 @@ section {
 .project2,
 .project3,
 .project4,
-.project5 {
+.project5,
+.project6 {
   border: 2px solid darkslategray;
   width: 90%;
   height: 35vw;
@@ -165,6 +166,23 @@ section {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+}
+.project6 {
+  position: relative;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 .c {
   color: green;
@@ -237,6 +255,10 @@ section {
   height: 100%;
   opacity: 1;
 }
+.project6:hover .project-overlay {
+  height: 100%;
+  opacity: 1;
+}
 
 /* messagebox */
 
@@ -295,7 +317,8 @@ section {
   .project2,
   .project3,
   .project4,
-  .project5 {
+  .project5,
+  .project6 {
     width: 90%;
     height: 25vw;
   }

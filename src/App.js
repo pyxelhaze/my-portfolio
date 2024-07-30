@@ -85,6 +85,20 @@ const App = () => {
               style={{ color: 'white', cursor: 'pointer', textDecoration: 'underline' }}
             >GitHub</a> page.
             <div className="projects">
+              <div className="project6">
+                <video autoPlay muted loop id="background-video">
+                  <source src="/thumbnails/chart.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="project-overlay">
+                  <a
+                    href="https://cryptopolys.pyxelhaze.com/"
+                    className="project-overlay-text overlay-link"
+                  >
+                    Cryptopolys
+                  </a>
+                </div>
+              </div>
               <div className="project2">
                 <div className="project-overlay">
                   <a
