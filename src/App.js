@@ -73,6 +73,7 @@ const App = () => {
           </div>
           <div className="modal-body">
             Here is a brief overview of my projects:
+            Cryptopolys is built with React and Node.js/Express while using a MySQL Database.
             pyxelhaze and The Blogging Point are built using React.
             Colors is a JavaScript minigame, Solarsystem accesses
             an external api, while Aqua Vista and
@@ -127,10 +128,10 @@ const App = () => {
               <div className="project3">
                 <div className="project-overlay">
                   <a
-                    href="https://pyxelhaze.com/solarsystem"
+                    href="https://pyxelhaze.com/mrnatranslator"
                     className="project-overlay-text overlay-link"
                   >
-                    Solarsystem
+                    mRNA - Translator
                   </a>
                 </div>
               </div>

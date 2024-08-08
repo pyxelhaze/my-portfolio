@@ -148,8 +148,12 @@ section {
 .project3 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
-  background-image: url('../public/thumbnails/sunsystem.jpg');
-  background-size: cover;
+  font-weight: 500;
+  background-image: url('../public/thumbnails/translator.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
 }
 .project4 {
   font-size: 2em;
@@ -232,10 +236,13 @@ section {
   padding: 40px;
 }
 .project1:hover .project-overlay,
-.project3:hover .project-overlay,
 .project5:hover .project-overlay {
   height: 100%;
   opacity: 0.75;
+}
+.project3:hover .project-overlay {
+  height: 100%;
+  opacity: 0.9;
 }
 .project2:hover .project-overlay {
   height: 100%;
